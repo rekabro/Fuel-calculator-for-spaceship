@@ -1,12 +1,12 @@
 function calculateFuelToOffload() {
-    var totalDistanceToTravel = prompt('Hány kilométer távolságot kíván megtenni? Adjon meg egy számot!');
-    var averageLitersOverHundred = prompt('Mi az űrhajó átlagos fogyasztása literben? Adjon meg egy számot!');
-    var tankCapacity = prompt('Mi az űrhajó üzemanyagtartályának űrtartalma literben? Adjon meg egy számot!');
+    var totalDistanceToTravel = prompt('How many km-s would you like to travel? Type a number!');
+    var averageLitersOverHundred = prompt('What is the spaceship\'s general fuel consumption in liters? Type a number!');
+    var tankCapacity = prompt('What\'s the capacity of the fuel tank in liters? Type a number!');
     
     var requiredFuel = totalDistanceToTravel * (averageLitersOverHundred / 100);
     
     var fuelToOffload = tankCapacity - requiredFuel;
-    alert('Az utazáshoz szükséges üzemanyag-mennyiség: ' + requiredFuel + ' L\n' + 'Leadandó üzemanyag-mennyiség: ' + fuelToOffload + ' L');
+    alert(`The quantity of fuel neccessary for your travel is: ${requiredFuel} L\nThe quantity of fuel to unload is: ${fuelToOffload} L`);
 }
 calculateFuelToOffload();
 
